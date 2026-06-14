@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Integral+CF:wght@400;500;700;900&display=swap');
+
+:root{
+
+    /* Colors */
+    --black:#000;
+    --white:#fff;
+    --gray:#f2f0f1;
+    --text-gray:#666;
+
+    /* Fonts */
+    --font-primary:'Satoshi', sans-serif;
+    --font-heading:'Integral CF', sans-serif;
+
+    --container:1240px;
+
+    --radius-sm:20px;
+    --radius-md:62px;
+
+    --transition:.3s ease;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:var(--font-primary);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:var(--font-heading);
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
