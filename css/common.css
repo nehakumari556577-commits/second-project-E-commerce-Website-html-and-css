@@ -1,62 +1,69 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --gray: #F2F0F1;
+    --text-gray: #666;
 
-@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Integral+CF:wght@400;500;700;900&display=swap');
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
 
-:root{
+    --container: 77.5rem; 
 
-    /* Colors */
-    --black:#000;
-    --white:#fff;
-    --gray:#f2f0f1;
-    --text-gray:#666;
+    --radius-sm: 1.25rem;   
+    --radius-md: 3.875rem;  
 
-    /* Fonts */
-    --font-primary:'Satoshi', sans-serif;
-    --font-heading:'Integral CF', sans-serif;
-
-    --container:1240px;
-
-    --radius-sm:20px;
-    --radius-md:62px;
-
-    --transition:.3s ease;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    --transition: 0.3s ease;
 }
 
 
 
-html{
-    scroll-behavior:smooth;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:var(--font-primary);
+html {
+    scroll-behavior: smooth;
+    font-size: 100%; 
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family:var(--font-heading);
+body {
+    font-family: var(--font-body);
+    color: var(--black);
+    background: var(--white);
 }
 
-img{
-    max-width:100%;
-    display:block;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
 }
 
-a{
-    text-decoration:none;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-ul{
-    list-style:none;
+a {
+    text-decoration: none;
+    color: inherit;
 }
+
+ul,
+ol {
+    list-style: none;
+}
+
+
 
 .container {
-    max-width: 1240px;
+    width: 100%;
+    max-width: var(--container);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25rem; 
 }
